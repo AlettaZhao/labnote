@@ -116,7 +116,7 @@ function Site({ show, lang, setLang, dark, setDark, onLogo }) {
           <button className="logo" onClick={onLogo} title={t.nav.back}><LabnoteWM /></button>
           <div className="ctrl">
             <div className="lang" onClick={() => setLang((l) => l === "zh" ? "en" : "zh")} title="中 / EN">
-              <span className={lang === "zh" ? "on" : ""} style={{ color: "rgb(255, 255, 255)" }}>中</span>
+              <span className={lang === "zh" ? "on" : ""}>中</span>
               <span className={lang === "en" ? "on" : ""}>EN</span>
             </div>
             <button className="tog" onClick={() => setDark((d) => !d)} title={t.nav.dark} style={{ height: "3px" }}>
